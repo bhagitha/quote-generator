@@ -15,7 +15,7 @@ class App extends React.Component {
     fetchAdvice = () => {
         axios.get('https://api.adviceslip.com/advice')
         .then((response) =>  {
-            const { advice } = response.data.slip; //object destructurind
+            const { advice } = response.data.slip; //object destructuring
 
             this.setState({ advice });
         })
